@@ -17,20 +17,14 @@
 # under the License.
 #
 
-pkg.name: hw/bsp/stm32l1xx_nucleo
-pkg.type: bsp
-pkg.description: BSP definition for the Olimex STM32L152 board.
+pkg.name: compiler/arm-none-eabi-m3
+pkg.type: compiler
+pkg.description: Compiler definition for ARM Cortex-M3 gcc cross compiler.
 pkg.author: "Taras"
 pkg.homepage: ""
 pkg.keywords:
-    - olimex
-    - stm32
-    - L152
-
-pkg.arch: cortex_m3
-pkg.compiler: compiler/arm-none-eabi-m3
-pkg.linkerscript: "STM32L152XE_FLASH.ld"
-pkg.cflags: 
-pkg.deps:
-    - hw/mcu/stm/stm32l1xx
-    - libs/baselibc
+    - arm
+    - compiler
+    - cortex
+    - m3
+    - gcc
